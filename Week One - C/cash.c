@@ -38,7 +38,7 @@ int main(void)
 
 int get_cents(void)
 {
-      // TODO
+
 
          int cents;
          do
@@ -52,7 +52,7 @@ int get_cents(void)
 
 int calculate_quarters(int cents)//why
 {
-    // TODO
+
     int quarters = 0;
     while (cents >= 25)
     {
@@ -62,13 +62,13 @@ int calculate_quarters(int cents)//why
     return quarters;
 }
 
-int calculate_dimes(int cents) // dababy lets go
+int calculate_dimes(int cents)
 {
-    // TODO
+
     int dimes = 0;
     while (cents >= 10)
     {
-        cents = cents - 10;// ye ye
+        cents = cents - 10;
         dimes++;
     }
     return dimes;
@@ -76,7 +76,7 @@ int calculate_dimes(int cents) // dababy lets go
 
 int calculate_nickels(int cents)
 {
-    // TODO
+
     int nickels = 0;
     while (cents >= 5)
     {
@@ -88,7 +88,7 @@ int calculate_nickels(int cents)
 
 int calculate_pennies(int cents)
 {
-    // TODO
+
     int pennies = 0;
     while (cents >= 1)
     {

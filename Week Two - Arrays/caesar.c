@@ -14,7 +14,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // checking if one of the arguments isalpha (we need an integer) - Looping through the string of integers
+
     for (int key = 0; key < strlen(argv[1]); key++)
     {
         if (isalpha(argv[1][key]))
@@ -24,9 +24,9 @@ int main(int argc, string argv[])
         }
     }
 
-    int key = atoi(argv[1]) % 26; // converts the ASCII to an integer from "20" to 20 as an interger
+    int key = atoi(argv[1]) % 26; // converts the ascii to an integer from "20" to 20 as an interger
 
-    // takes the plaintext from the user
+    // takes the normal text from the user
     string plaintext = get_string("plaintext: ");
 
     printf("ciphertext: ");
@@ -36,7 +36,7 @@ int main(int argc, string argv[])
     {
         if (!isalpha(plaintext[i]))
         {
-            //prints the current element of the array if it's not alpha
+            // prints the current element of the array if it's not alpha
             printf("%c", plaintext[i]);
             continue;
         }

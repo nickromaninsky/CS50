@@ -1,5 +1,3 @@
-// Everything but the functions is a distrubution code provided by cs50
-
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
@@ -149,8 +147,9 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    // This loop counts the votes for each session of the election
-    // if vote was eliminated, it skips to next preference of that voter
+
+
+
     for (int v = 0; v < voter_count; v++)
     {
         for (int r = 0; r < candidate_count; r++)
